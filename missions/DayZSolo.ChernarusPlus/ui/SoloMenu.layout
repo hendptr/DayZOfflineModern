@@ -1,0 +1,582 @@
+FrameWidgetClass SoloRoot
+{
+    visible 1
+    color 0 0 0 0
+    position 0 0
+    size 1 1
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    {
+        PanelWidgetClass solo_panel
+        {
+            visible 1
+            color 0.02 0.04 0.06 0.94
+            position 0.03 0.05
+            size 1180 700
+            hexactpos 0
+            vexactpos 0
+            hexactsize 1
+            vexactsize 1
+            {
+                TextWidgetClass title
+                {
+                    position 16 10
+                    size 900 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron-Bold58"
+                    "exact text" 1
+                    "exact text size" 26
+                    text "DAYZ SOLO  |  ITEM BROWSER & TOOLS"
+                }
+                ButtonWidgetClass close_button
+                {
+                    position 1024 10
+                    size 140 32
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "CLOSE (ESC)"
+                    text_proportion 0.6
+                }
+                TextWidgetClass hint
+                {
+                    position 16 48
+                    size 1148 24
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 16
+                    text "1) Pick a category   2) Search by name (optional)   3) Click an item   4) Spawn.   Double-click = to inventory."
+                }
+
+                ButtonWidgetClass cat_0
+                {
+                    position 16 80
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "ALL ITEMS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_1
+                {
+                    position 150 80
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "LOADOUT KITS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_2
+                {
+                    position 16 120
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "FITS MY GUN"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_3
+                {
+                    position 150 120
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "WEAPONS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_4
+                {
+                    position 16 160
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "MAGAZINES"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_5
+                {
+                    position 150 160
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "AMMO"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_6
+                {
+                    position 16 200
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "ATTACHMENTS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_7
+                {
+                    position 150 200
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "MELEE & TOOLS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_8
+                {
+                    position 16 240
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "TOPS / JACKETS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_9
+                {
+                    position 150 240
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "PANTS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_10
+                {
+                    position 16 280
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "SHOES / BOOTS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_11
+                {
+                    position 150 280
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "HATS / MASKS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_12
+                {
+                    position 16 320
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "VESTS / GLOVES"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_13
+                {
+                    position 150 320
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "BACKPACKS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_14
+                {
+                    position 16 360
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "FOOD & DRINK"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_15
+                {
+                    position 150 360
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "MEDICAL"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_16
+                {
+                    position 16 400
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "BASE / STORAGE"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_17
+                {
+                    position 150 400
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "VEHICLES"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_18
+                {
+                    position 16 440
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "ZOMBIES / ANIMALS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_19
+                {
+                    position 150 440
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "WORLD OBJECTS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass cat_20
+                {
+                    position 16 480
+                    size 128 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "OTHER"
+                    text_proportion 0.5
+                }
+                MultilineTextWidgetClass tips_text
+                {
+                    position 16 526
+                    size 262 128
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 14
+                    text "TIP: hold a gun, then FITS MY GUN lists its magazines, ammo and attachments. KITTED ON = guns spawn with a loaded mag and parts, cars with wheels, battery and fuel."
+                }
+
+                TextWidgetClass category_text
+                {
+                    position 292 80
+                    size 520 24
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron-Bold58"
+                    "exact text" 1
+                    "exact text size" 18
+                    text "All items"
+                }
+                TextWidgetClass search_label
+                {
+                    position 292 112
+                    size 80 30
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 16
+                    text "SEARCH:"
+                }
+                EditBoxWidgetClass search_input
+                {
+                    visible 1
+                    position 372 108
+                    size 360 32
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style Editor
+                    text ""
+                }
+                ButtonWidgetClass clear_search_button
+                {
+                    position 738 108
+                    size 74 32
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "CLEAR"
+                    text_proportion 0.55
+                }
+                TextListboxWidgetClass item_list
+                {
+                    visible 1
+                    position 292 148
+                    size 520 480
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style Editor
+                    lines 24
+                    font "gui/fonts/Metron14"
+                }
+                TextWidgetClass count_text
+                {
+                    position 292 634
+                    size 520 22
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 14
+                    text ""
+                }
+
+                PanelWidgetClass preview_panel
+                {
+                    visible 1
+                    color 0 0 0 0.6
+                    position 826 80
+                    size 338 190
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style rover_sim_colorable
+                }
+                MultilineTextWidgetClass details_text
+                {
+                    position 826 276
+                    size 338 84
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 14
+                    text "Select a row to see details."
+                }
+                TextWidgetClass amount_label
+                {
+                    position 826 368
+                    size 80 30
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 16
+                    text "AMOUNT:"
+                }
+                EditBoxWidgetClass amount_input
+                {
+                    visible 1
+                    position 906 366
+                    size 70 30
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style Editor
+                    text "1"
+                }
+                ButtonWidgetClass kitted_button
+                {
+                    position 984 366
+                    size 180 30
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "KITTED: ON"
+                    text_proportion 0.55
+                }
+                ButtonWidgetClass spawn_inv_button
+                {
+                    position 826 404
+                    size 166 36
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "TO INVENTORY"
+                    text_proportion 0.55
+                }
+                ButtonWidgetClass spawn_hands_button
+                {
+                    position 998 404
+                    size 166 36
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "TO HANDS"
+                    text_proportion 0.55
+                }
+                ButtonWidgetClass spawn_ground_button
+                {
+                    position 826 446
+                    size 166 36
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "ON GROUND"
+                    text_proportion 0.55
+                }
+                ButtonWidgetClass place_world_button
+                {
+                    position 998 446
+                    size 166 36
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "PLACE + SAVE"
+                    text_proportion 0.55
+                }
+                TextWidgetClass cheats_label
+                {
+                    position 826 492
+                    size 338 22
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron-Bold58"
+                    "exact text" 1
+                    "exact text size" 16
+                    text "CHEATS & SESSION"
+                }
+                ButtonWidgetClass god_button
+                {
+                    position 826 516
+                    size 166 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "GOD MODE"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass ammo_button
+                {
+                    position 998 516
+                    size 166 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "UNLIMITED AMMO"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass heal_button
+                {
+                    position 826 556
+                    size 166 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "HEAL / FOOD / WATER"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass refill_button
+                {
+                    position 998 556
+                    size 166 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "REFILL ALL MAGS"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass save_button
+                {
+                    position 826 596
+                    size 166 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "SAVE SESSION NOW"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass teleport_button
+                {
+                    position 998 596
+                    size 166 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "TELEPORT (MAP)"
+                    text_proportion 0.5
+                }
+                TextWidgetClass status_text
+                {
+                    position 16 664
+                    size 1148 26
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 16
+                    text "K = this menu, O = teleport map, ESC closes."
+                }
+            }
+        }
+    }
+}

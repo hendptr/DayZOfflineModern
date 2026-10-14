@@ -1,0 +1,184 @@
+FrameWidgetClass TeleportRoot
+{
+    visible 1
+    color 0 0 0 0
+    position 0 0
+    size 1 1
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    {
+        PanelWidgetClass teleport_panel
+        {
+            visible 1
+            color 0.02 0.04 0.06 0.94
+            position 0.03 0.05
+            size 1180 700
+            hexactpos 0
+            vexactpos 0
+            hexactsize 1
+            vexactsize 1
+            {
+                TextWidgetClass title
+                {
+                    position 16 10
+                    size 900 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron-Bold58"
+                    "exact text" 1
+                    "exact text size" 26
+                    text "DAYZ SOLO  |  TELEPORT"
+                }
+                ButtonWidgetClass close_button
+                {
+                    position 1024 10
+                    size 140 32
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "CLOSE (ESC)"
+                    text_proportion 0.6
+                }
+                TextWidgetClass hint
+                {
+                    position 16 48
+                    size 1148 24
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 16
+                    text "Drag to move the map, mouse wheel to zoom, DOUBLE-CLICK a spot to teleport there."
+                }
+                MapWidgetClass map
+                {
+                    visible 1
+                    position 16 80
+                    size 760 570
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                }
+                TextWidgetClass map_cross
+                {
+                    visible 1
+                    ignorepointer 1
+                    position 384 350
+                    size 24 30
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron-Bold58"
+                    "exact text" 1
+                    "exact text size" 28
+                    color 1 0.2 0.2 1
+                    text "+"
+                }
+                TextWidgetClass places_label
+                {
+                    position 792 80
+                    size 372 24
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron-Bold58"
+                    "exact text" 1
+                    "exact text size" 18
+                    text "Places (double-click or GO)"
+                }
+                EditBoxWidgetClass search_input
+                {
+                    visible 1
+                    position 792 108
+                    size 290 32
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style Editor
+                    text ""
+                }
+                ButtonWidgetClass clear_search_button
+                {
+                    position 1090 108
+                    size 74 32
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "CLEAR"
+                    text_proportion 0.55
+                }
+                TextListboxWidgetClass location_list
+                {
+                    visible 1
+                    position 792 148
+                    size 372 420
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    style Editor
+                    lines 20
+                    font "gui/fonts/Metron14"
+                }
+                ButtonWidgetClass go_button
+                {
+                    position 792 576
+                    size 180 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "GO TO PLACE"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass center_button
+                {
+                    position 984 576
+                    size 180 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "GO TO MAP CENTER +"
+                    text_proportion 0.5
+                }
+                ButtonWidgetClass items_button
+                {
+                    position 792 616
+                    size 372 34
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    text "ITEM MENU (K)"
+                    text_proportion 0.5
+                }
+                TextWidgetClass status_text
+                {
+                    position 16 664
+                    size 1148 26
+                    hexactpos 1
+                    vexactpos 1
+                    hexactsize 1
+                    vexactsize 1
+                    font "gui/fonts/Metron14"
+                    "exact text" 1
+                    "exact text size" 16
+                    text ""
+                }
+            }
+        }
+    }
+}
